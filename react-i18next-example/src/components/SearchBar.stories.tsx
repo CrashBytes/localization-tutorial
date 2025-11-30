@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { SearchBar } from './SearchBar';
 import { useTranslation } from 'react-i18next';
 
@@ -47,12 +47,19 @@ type Story = StoryObj<typeof meta>;
 /**
  * Default search bar in English
  */
-export const Default: Story = {};
+export const Default: Story = {
+  args: {
+    onSearch: (query) => console.log('Search:', query),
+  },
+};
 
 /**
  * Search bar in Spanish
  */
 export const Spanish: Story = {
+  args: {
+    onSearch: (query) => console.log('Search:', query),
+  },
   globals: { locale: 'es-ES' },
 };
 
@@ -60,6 +67,9 @@ export const Spanish: Story = {
  * Search bar in French
  */
 export const French: Story = {
+  args: {
+    onSearch: (query) => console.log('Search:', query),
+  },
   globals: { locale: 'fr-FR' },
 };
 
@@ -67,6 +77,9 @@ export const French: Story = {
  * Search bar in German
  */
 export const German: Story = {
+  args: {
+    onSearch: (query) => console.log('Search:', query),
+  },
   globals: { locale: 'de-DE' },
 };
 
@@ -74,6 +87,9 @@ export const German: Story = {
  * Search bar in Japanese
  */
 export const Japanese: Story = {
+  args: {
+    onSearch: (query) => console.log('Search:', query),
+  },
   globals: { locale: 'ja-JP' },
 };
 
@@ -84,6 +100,9 @@ export const Japanese: Story = {
  * - Live region announcements
  */
 export const AccessibilityFeatures: Story = {
+  args: {
+    onSearch: (query) => console.log('Search:', query),
+  },
   parameters: {
     docs: {
       description: {

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { ProductCard } from './ProductCard';
 import { useTranslation } from 'react-i18next';
 
@@ -19,8 +19,20 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
-    product: {
-      description: 'Product data object',
+    name: {
+      description: 'Product name',
+    },
+    price: {
+      description: 'Product price',
+    },
+    currency: {
+      description: 'Currency code',
+    },
+    stockCount: {
+      description: 'Stock quantity',
+    },
+    description: {
+      description: 'Product description',
     },
   },
   decorators: [
@@ -45,14 +57,11 @@ type Story = StoryObj<typeof meta>;
  */
 export const InStock: Story = {
   args: {
-    product: {
-      id: '1',
-      name: 'Wireless Headphones',
-      description: 'Premium noise-canceling wireless headphones with 30-hour battery life',
-      price: 299.99,
-      currency: 'USD',
-      stock: 15,
-    },
+    name: 'Wireless Headphones',
+    description: 'Premium noise-canceling wireless headphones with 30-hour battery life',
+    price: 299.99,
+    currency: 'USD',
+    stockCount: 15,
   },
 };
 
@@ -61,14 +70,11 @@ export const InStock: Story = {
  */
 export const LowStock: Story = {
   args: {
-    product: {
-      id: '2',
-      name: 'Smart Watch',
-      description: 'Fitness tracking smartwatch with heart rate monitor',
-      price: 199.99,
-      currency: 'USD',
-      stock: 3,
-    },
+    name: 'Smart Watch',
+    description: 'Fitness tracking smartwatch with heart rate monitor',
+    price: 199.99,
+    currency: 'USD',
+    stockCount: 3,
   },
 };
 
@@ -77,14 +83,11 @@ export const LowStock: Story = {
  */
 export const SingleItem: Story = {
   args: {
-    product: {
-      id: '3',
-      name: 'Bluetooth Speaker',
-      description: 'Portable waterproof speaker with 360-degree sound',
-      price: 89.99,
-      currency: 'USD',
-      stock: 1,
-    },
+    name: 'Bluetooth Speaker',
+    description: 'Portable waterproof speaker with 360-degree sound',
+    price: 89.99,
+    currency: 'USD',
+    stockCount: 1,
   },
 };
 
@@ -93,14 +96,11 @@ export const SingleItem: Story = {
  */
 export const OutOfStock: Story = {
   args: {
-    product: {
-      id: '4',
-      name: 'Gaming Mouse',
-      description: 'High-precision gaming mouse with customizable RGB lighting',
-      price: 79.99,
-      currency: 'USD',
-      stock: 0,
-    },
+    name: 'Gaming Mouse',
+    description: 'High-precision gaming mouse with customizable RGB lighting',
+    price: 79.99,
+    currency: 'USD',
+    stockCount: 0,
   },
 };
 
@@ -109,14 +109,11 @@ export const OutOfStock: Story = {
  */
 export const EuropeanPricing: Story = {
   args: {
-    product: {
-      id: '5',
-      name: 'Mechanical Keyboard',
-      description: 'Premium mechanical keyboard with tactile switches',
-      price: 149.99,
-      currency: 'EUR',
-      stock: 25,
-    },
+    name: 'Mechanical Keyboard',
+    description: 'Premium mechanical keyboard with tactile switches',
+    price: 149.99,
+    currency: 'EUR',
+    stockCount: 25,
   },
 };
 
@@ -125,13 +122,10 @@ export const EuropeanPricing: Story = {
  */
 export const LuxuryItem: Story = {
   args: {
-    product: {
-      id: '6',
-      name: 'Professional Camera',
-      description: 'Full-frame mirrorless camera with 4K video recording',
-      price: 2499.99,
-      currency: 'USD',
-      stock: 5,
-    },
+    name: 'Professional Camera',
+    description: 'Full-frame mirrorless camera with 4K video recording',
+    price: 2499.99,
+    currency: 'USD',
+    stockCount: 5,
   },
 };

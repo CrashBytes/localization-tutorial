@@ -160,9 +160,8 @@ describe('Translation Files Validation', () => {
         baseVariables.forEach((vars, key) => {
           const localeVars = localeVariables.get(key) || [];
 
-          expect(localeVars.sort()).toEqual(
-            vars.sort(),
-            `Mismatch in ${locale} for key "${key}"`
+          expect(localeVars.sort(), `Mismatch in ${locale} for key "${key}"`).toEqual(
+            vars.sort()
           );
         });
       });

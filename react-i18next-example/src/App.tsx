@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from './components/LanguageSwitcher';
 import { ProductCard } from './components/ProductCard';
@@ -46,13 +45,20 @@ function App() {
       <main>
         <section className="search-section">
           <h2>{t('products.title')}</h2>
-          <SearchBar />
+          <SearchBar onSearch={(query) => console.log('Search:', query)} />
         </section>
 
         <section className="products-section">
           <div className="product-grid">
             {sampleProducts.map(product => (
-              <ProductCard key={product.id} product={product} />
+              <ProductCard 
+                key={product.id}
+                name={product.name}
+                price={product.price}
+                currency={product.currency}
+                stockCount={product.stock}
+                description={product.description}
+              />
             ))}
           </div>
         </section>
