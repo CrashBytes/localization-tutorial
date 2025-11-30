@@ -36,7 +36,7 @@ jobs:
       - name: Run tests
         run: |
           cd react-i18next-example
-          npm test -- --run
+          npm run test:run
 
       - name: Run type check
         run: |

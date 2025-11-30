@@ -43,8 +43,10 @@ describe('LanguageSwitcher', () => {
 
       const select = screen.getByRole('combobox');
       await user.selectOptions(select, 'es-ES');
-
-      expect((select as HTMLSelectElement).value).toBe('es-ES');
+      
+      await waitFor(() => {
+        expect((select as HTMLSelectElement).value).toBe('es-ES');
+      });
     });
 
     it('updates UI when language is changed', async () => {
@@ -58,8 +60,8 @@ describe('LanguageSwitcher', () => {
 
       // Change to Spanish
       await user.selectOptions(select, 'es-ES');
-
-      // Wait for update
+      
+      // Wait for language change and UI update
       await screen.findByLabelText(/seleccionar idioma/i);
     });
   });
@@ -135,7 +137,7 @@ describe('LanguageSwitcher', () => {
 
       // Instead of relying on keyboard navigation, select a different language directly
       await user.selectOptions(select, 'es-ES');
-
+      
       // Wait for value to change (async language change)
       await waitFor(() => {
         expect((select as HTMLSelectElement).value).toBe('es-ES');
@@ -156,8 +158,8 @@ describe('LanguageSwitcher', () => {
 
       const select = screen.getByRole('combobox');
       await user.selectOptions(select, 'es-ES');
-
-      // Help text should now be in Spanish
+      
+      // Wait for language change and help text update
       await screen.findByText(/idioma actual/i);
     });
   });

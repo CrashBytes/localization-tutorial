@@ -34,8 +34,11 @@ describe('SearchBar', () => {
 
       const input = screen.getByRole('searchbox');
       await user.type(input, 'wireless headphones');
-
-      expect(input).toHaveValue('wireless headphones');
+      
+      // Wait for all state updates to complete
+      await waitFor(() => {
+        expect(input).toHaveValue('wireless headphones');
+      });
     });
 
     it('calls onSearch when search button is clicked', async () => {
@@ -47,9 +50,13 @@ describe('SearchBar', () => {
       const button = screen.getByRole('button', { name: /search/i });
 
       await user.type(input, 'headphones');
+      // Wait for typing state updates
+      await waitFor(() => expect(input).toHaveValue('headphones'));
+      
       await user.click(button);
-
-      expect(onSearch).toHaveBeenCalledWith('headphones');
+      await waitFor(() => {
+        expect(onSearch).toHaveBeenCalledWith('headphones');
+      });
     });
 
     it('calls onSearch when Enter key is pressed', async () => {
@@ -59,8 +66,10 @@ describe('SearchBar', () => {
 
       const input = screen.getByRole('searchbox');
       await user.type(input, 'headphones{Enter}');
-
-      expect(onSearch).toHaveBeenCalledWith('headphones');
+      
+      await waitFor(() => {
+        expect(onSearch).toHaveBeenCalledWith('headphones');
+      });
     });
 
     it('does not call onSearch with empty query', async () => {
@@ -83,9 +92,13 @@ describe('SearchBar', () => {
       const button = screen.getByRole('button', { name: /search/i });
 
       await user.type(input, '  headphones  ');
+      // Wait for typing state updates
+      await waitFor(() => expect(input).toHaveValue('  headphones  '));
+      
       await user.click(button);
-
-      expect(onSearch).toHaveBeenCalledWith('headphones');
+      await waitFor(() => {
+        expect(onSearch).toHaveBeenCalledWith('headphones');
+      });
     });
   });
 
@@ -242,9 +255,11 @@ describe('SearchBar', () => {
 
       const input = screen.getByRole('searchbox');
       await user.type(input, 'headphones{Enter}');
-
-      expect(onSubmit).toHaveBeenCalled();
-      expect(onSearch).toHaveBeenCalledWith('headphones');
+      
+      await waitFor(() => {
+        expect(onSubmit).toHaveBeenCalled();
+        expect(onSearch).toHaveBeenCalledWith('headphones');
+      });
     });
   });
 
@@ -255,14 +270,18 @@ describe('SearchBar', () => {
 
       const input = screen.getByRole('searchbox');
       await user.type(input, 'headphones');
-
-      expect(input).toHaveValue('headphones');
+      
+      await waitFor(() => {
+        expect(input).toHaveValue('headphones');
+      });
 
       // Look for clear button (if implemented)
       const clearButton = screen.queryByRole('button', { name: /clear/i });
       if (clearButton) {
         await user.click(clearButton);
-        expect(input).toHaveValue('');
+        await waitFor(() => {
+          expect(input).toHaveValue('');
+        });
       }
     });
   });

@@ -44,8 +44,10 @@ describe('i18n Configuration', () => {
       const productKeys = [
         'product.addToCart',
         'product.notifyMe',
-        'product.inStock',
-        'product.lowStock',
+        'product.inStock_one',
+        'product.inStock_other',
+        'product.lowStock_one',
+        'product.lowStock_other',
         'product.outOfStock',
       ];
 

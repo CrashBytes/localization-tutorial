@@ -5,8 +5,6 @@
   },
   "product": {
     "outOfStock": "Rupture de stock",
-    "lowStock": "Seulement {{count}} articles restants",
-    "inStock": "En Stock : {{count}} disponibles",
     "lowStock_one": "Seulement {{count}} article restant",
     "lowStock_other": "Seulement {{count}} articles restants",
     "inStock_one": "{{count}} article en stock",

@@ -5,8 +5,6 @@
   },
   "product": {
     "outOfStock": "在庫切れ",
-    "lowStock": "残り{{count}}個",
-    "inStock": "在庫あり",
     "lowStock_one": "残り{{count}}個",
     "lowStock_other": "残り{{count}}個",
     "inStock_one": "{{count}}個の在庫あり",
