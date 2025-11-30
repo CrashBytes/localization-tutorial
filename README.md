@@ -2,6 +2,7 @@
 
 [![Storybook](https://img.shields.io/badge/Storybook-Live%20Demo-FF4785?style=for-the-badge&logo=storybook&logoColor=white)](https://crashbytes.github.io/localization-tutorial/)
 [![Tutorial](https://img.shields.io/badge/Read-Tutorial-0066CC?style=for-the-badge&logo=read-the-docs&logoColor=white)](https://crashbytes.com/articles/web-application-localization-i18n-tutorial-json-key-value-implementation-2025)
+[![Tests](https://github.com/crashbytes/localization-tutorial/actions/workflows/tests.yml/badge.svg)](https://github.com/crashbytes/localization-tutorial/actions/workflows/tests.yml)
 
 > Complete examples for implementing internationalization (i18n) in web applications using JSON key-value pairs
 
