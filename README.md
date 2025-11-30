@@ -1,22 +1,22 @@
 # Web Application Localization Tutorial
 
-[![Storybook](https://img.shields.io/badge/Storybook-Live%20Demo-FF4785?style=for-the-badge&logo=storybook&logoColor=white)](https://michaeleakins.github.io/crashbytes-tutorials/)
+[![Storybook](https://img.shields.io/badge/Storybook-Live%20Demo-FF4785?style=for-the-badge&logo=storybook&logoColor=white)](https://crashbytes.github.io/localization-tutorial/)
 [![Tutorial](https://img.shields.io/badge/Read-Tutorial-0066CC?style=for-the-badge&logo=read-the-docs&logoColor=white)](https://crashbytes.com/articles/web-application-localization-i18n-tutorial-json-key-value-implementation-2025)
 
 > Complete examples for implementing internationalization (i18n) in web applications using JSON key-value pairs
 
-## 🎮 Try the Interactive Demo
+## Try the Interactive Demo
 
 **Experience localization in action!** Explore all components with real-time language switching:
 
-### 👉 **[Launch Interactive Storybook →](https://michaeleakins.github.io/crashbytes-tutorials/)**
+### **[Launch Interactive Storybook →](https://crashbytes.github.io/localization-tutorial/)**
 
 Features:
-- 🌍 **5 languages**: English, Spanish, French, German, Japanese
-- 💱 **Currency formatting**: See prices in different locales
-- 📦 **Product states**: In stock, low stock, out of stock
-- ♿ **Accessibility**: ARIA labels, screen reader support
-- 📝 **Documentation**: Auto-generated component docs
+- **5 languages**: English, Spanish, French, German, Japanese
+- **Currency formatting**: See prices in different locales
+- **Product states**: In stock, low stock, out of stock
+- **Accessibility**: ARIA labels, screen reader support
+- **Documentation**: Auto-generated component docs
 
 ---
 
@@ -67,7 +67,7 @@ Storybook provides:
 - **Documentation** - Auto-generated docs for each component
 - **Edge cases** - Test scenarios like low stock, out of stock, different currencies
 
-**📖 [Complete Storybook Setup Guide →](STORYBOOK.md)**
+**[Complete Storybook Setup Guide →](STORYBOOK.md)**
 
 ### Next.js Example (next-intl)
 
@@ -121,7 +121,7 @@ localization-tutorial/
 
 ## Storybook Integration
 
-This tutorial includes a full Storybook setup that lets you test localization components interactively in GitHub. Perfect for:
+This tutorial includes a full Storybook setup that lets you test localization components interactively in your browser. Perfect for:
 
 - **Testing components** without running the full application
 - **Demonstrating localization** to stakeholders
@@ -150,11 +150,11 @@ This tutorial includes a full Storybook setup that lets you test localization co
 
 Storybook includes a global language switcher in the toolbar. Change the locale and watch all components update in real-time:
 
-- 🇺🇸 English
-- 🇪🇸 Español  
-- 🇫🇷 Français
-- 🇩🇪 Deutsch
-- 🇯🇵 日本語
+- English (en-US)
+- Español (es-ES)
+- Français (fr-FR)
+- Deutsch (de-DE)
+- 日本語 (ja-JP)
 
 ## Features Demonstrated
 
@@ -290,6 +290,8 @@ Contributions welcome! Please:
 3. Make your changes
 4. Add tests
 5. Submit a pull request
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines including how to add new Storybook stories.
 
 ## License
 
