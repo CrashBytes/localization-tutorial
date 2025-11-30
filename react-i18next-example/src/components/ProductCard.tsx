@@ -1,58 +1,61 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-interface Product {
-  id: string;
+interface ProductCardProps {
   name: string;
-  description: string;
   price: number;
   currency: string;
-  stock: number;
+  stockCount: number;
+  description?: string;
 }
 
-interface ProductCardProps {
-  product: Product;
-}
-
-export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+export const ProductCard: React.FC<ProductCardProps> = ({ 
+  name, 
+  price, 
+  currency, 
+  stockCount,
+  description 
+}) => {
   const { t, i18n } = useTranslation();
   
   // Format currency based on current locale
-  const formatCurrency = (amount: number, currency: string) => {
+  const formatCurrency = (amount: number, currencyCode: string) => {
     return new Intl.NumberFormat(i18n.language, {
       style: 'currency',
-      currency: currency
+      currency: currencyCode
     }).format(amount);
   };
   
-  const isInStock = product.stock > 0;
+  const getStockStatus = () => {
+    if (stockCount === 0) {
+      return t('product.outOfStock');
+    } else if (stockCount <= 5) {
+      return t('product.lowStock', { count: stockCount });
+    } else {
+      return t('product.inStock', { count: stockCount });
+    }
+  };
+
+  const isInStock = stockCount > 0;
   
   return (
     <div className="product-card">
-      <h3>{product.name}</h3>
-      <p>{product.description}</p>
+      <h3>{name}</h3>
+      {description && <p>{description}</p>}
       
       <div className="product-price">
-        {formatCurrency(product.price, product.currency)}
+        {formatCurrency(price, currency)}
       </div>
       
-      <div className="product-stock">
-        {isInStock ? (
-          <span className="in-stock">
-            {t('products.inStock', { count: product.stock })}
-          </span>
-        ) : (
-          <span className="out-of-stock">
-            {t('products.outOfStock')}
-          </span>
-        )}
+      <div className="product-stock" aria-label={t('product.stockAvailability')}>
+        {getStockStatus()}
       </div>
       
       <button 
         disabled={!isInStock}
-        aria-label={`${t('products.addToCart')} - ${product.name}`}
+        aria-label={isInStock ? t('product.addToCart') : t('product.notifyMe')}
       >
-        {t('products.addToCart')}
+        {isInStock ? t('product.addToCart') : t('product.notifyMe')}
       </button>
     </div>
   );

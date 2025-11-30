@@ -1,5 +1,36 @@
 {
+  "languageSwitcher": {
+    "label": "Sélectionner la langue",
+    "currentLanguage": "Langue actuelle"
+  },
+  "product": {
+    "outOfStock": "Rupture de stock",
+    "lowStock": "Seulement {{count}} articles restants",
+    "inStock": "En Stock : {{count}} disponibles",
+    "lowStock_one": "Seulement {{count}} article restant",
+    "lowStock_other": "Seulement {{count}} articles restants",
+    "inStock_one": "{{count}} article en stock",
+    "inStock_other": "{{count}} articles en stock",
+    "addToCart": "Ajouter au panier",
+    "notifyMe": "Notifier lors de la disponibilité",
+    "stockAvailability": "Disponibilité du stock"
+  },
+  "search": {
+    "label": "Rechercher",
+    "placeholder": "Rechercher des produits...",
+    "button": "Rechercher",
+    "searching": "Recherche en cours...",
+    "clear": "Effacer",
+    "resultsFound_one": "{{count}} résultat trouvé",
+    "resultsFound_other": "{{count}} résultats trouvés",
+    "noResults": "Aucun résultat trouvé"
+  },
   "common": {
+    "search": "Rechercher",
+    "searching": "Recherche en cours...",
+    "resultsFound": "{{count}} résultats trouvés",
+    "noResults": "Aucun résultat trouvé",
+    "selectLanguage": "Sélectionner la langue",
     "currentLanguage": "Langue Actuelle",
     "languageSwitcherHelp": "Utilisez le menu déroulant pour changer de langue. Vous pouvez également utiliser la barre d'outils en haut pour changer la locale globale."
   },
@@ -146,7 +177,7 @@
     "product": "Produit",
     "resources": "Ressources",
     "legal": "Légal",
-    "copyright": "© {{year}} VotreEntreprise. Tous droits réservés.",
+    "copyright": "© {{year}} Notre Entreprise. Tous droits réservés.",
     "links": {
       "blog": "Blog",
       "careers": "Carrières",
@@ -163,12 +194,12 @@
   },
   "time": {
     "justNow": "à l'instant",
-    "minutesAgo": "il y a {{count}} minute",
-    "minutesAgo_plural": "il y a {{count}} minutes",
-    "hoursAgo": "il y a {{count}} heure",
-    "hoursAgo_plural": "il y a {{count}} heures",
-    "daysAgo": "il y a {{count}} jour",
-    "daysAgo_plural": "il y a {{count}} jours"
+    "minutesAgo_one": "il y a {{count}} minute",
+    "minutesAgo_other": "il y a {{count}} minutes",
+    "hoursAgo_one": "il y a {{count}} heure",
+    "hoursAgo_other": "il y a {{count}} heures",
+    "daysAgo_one": "il y a {{count}} jour",
+    "daysAgo_other": "il y a {{count}} jours"
   },
   "status": {
     "loading": "Chargement du contenu, veuillez patienter",
@@ -183,10 +214,10 @@
   },
   "images": {
     "logo": {
-      "alt": "Logo VotreEntreprise - Lien vers la page d'accueil"
+      "alt": "Logo Notre Entreprise - Lien vers la page d'accueil"
     },
     "product": {
-      "placeholder": "Image de produit de remplacement",
+      "placeholder": "Image du produit",
       "loading": "Chargement de l'image du produit",
       "error": "Échec du chargement de l'image du produit"
     },

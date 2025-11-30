@@ -12,7 +12,7 @@ import arSA from '../locales/ar-SA.json';
 
 // Define available languages
 export const supportedLanguages = {
-  'en-US': 'English (US)',
+  'en-US': 'English',
   'es-ES': 'Español',
   'fr-FR': 'Français',
   'de-DE': 'Deutsch',

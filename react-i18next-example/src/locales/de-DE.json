@@ -1,5 +1,36 @@
 {
+  "languageSwitcher": {
+    "label": "Sprache auswählen",
+    "currentLanguage": "Aktuelle Sprache"
+  },
+  "product": {
+    "outOfStock": "Ausverkauft",
+    "lowStock": "Nur noch {{count}} Stück verfügbar",
+    "inStock": "Auf Lager: {{count}} verfügbar",
+    "lowStock_one": "Nur noch {{count}} Stück verfügbar",
+    "lowStock_other": "Nur noch {{count}} Stück verfügbar",
+    "inStock_one": "{{count}} Stück auf Lager",
+    "inStock_other": "{{count}} Stück auf Lager",
+    "addToCart": "In den Warenkorb",
+    "notifyMe": "Benachrichtigen, wenn wieder verfügbar",
+    "stockAvailability": "Lagerverfügbarkeit"
+  },
+  "search": {
+    "label": "Suchen",
+    "placeholder": "Produkte suchen...",
+    "button": "Suchen",
+    "searching": "Suche läuft...",
+    "clear": "Löschen",
+    "resultsFound_one": "{{count}} Ergebnis gefunden",
+    "resultsFound_other": "{{count}} Ergebnisse gefunden",
+    "noResults": "Keine Ergebnisse gefunden"
+  },
   "common": {
+    "search": "Suchen",
+    "searching": "Suche läuft...",
+    "resultsFound": "{{count}} Ergebnisse gefunden",
+    "noResults": "Keine Ergebnisse gefunden",
+    "selectLanguage": "Sprache auswählen",
     "currentLanguage": "Aktuelle Sprache",
     "languageSwitcherHelp": "Verwenden Sie das Dropdown-Menü, um die Sprache zu wechseln. Sie können auch die Symbolleiste oben verwenden, um das globale Gebietsschema zu ändern."
   },
@@ -146,7 +177,7 @@
     "product": "Produkt",
     "resources": "Ressourcen",
     "legal": "Rechtliches",
-    "copyright": "© {{year}} IhrUnternehmen. Alle Rechte vorbehalten.",
+    "copyright": "© {{year}} Unser Unternehmen. Alle Rechte vorbehalten.",
     "links": {
       "blog": "Blog",
       "careers": "Karriere",
@@ -163,12 +194,12 @@
   },
   "time": {
     "justNow": "gerade eben",
-    "minutesAgo": "vor {{count}} Minute",
-    "minutesAgo_plural": "vor {{count}} Minuten",
-    "hoursAgo": "vor {{count}} Stunde",
-    "hoursAgo_plural": "vor {{count}} Stunden",
-    "daysAgo": "vor {{count}} Tag",
-    "daysAgo_plural": "vor {{count}} Tagen"
+    "minutesAgo_one": "vor {{count}} Minute",
+    "minutesAgo_other": "vor {{count}} Minuten",
+    "hoursAgo_one": "vor {{count}} Stunde",
+    "hoursAgo_other": "vor {{count}} Stunden",
+    "daysAgo_one": "vor {{count}} Tag",
+    "daysAgo_other": "vor {{count}} Tagen"
   },
   "status": {
     "loading": "Inhalt wird geladen, bitte warten",
@@ -183,10 +214,10 @@
   },
   "images": {
     "logo": {
-      "alt": "IhrUnternehmen Logo - Link zur Startseite"
+      "alt": "Unser Unternehmen Logo - Link zur Startseite"
     },
     "product": {
-      "placeholder": "Produktbild-Platzhalter",
+      "placeholder": "Produktbild",
       "loading": "Produktbild wird geladen",
       "error": "Produktbild konnte nicht geladen werden"
     },

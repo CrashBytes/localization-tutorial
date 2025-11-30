@@ -1,7 +1,31 @@
 {
+  "languageSwitcher": {
+    "label": "اختر اللغة",
+    "currentLanguage": "اللغة الحالية"
+  },
+  "product": {
+  "outOfStock": "غير متوفر",
+  "lowStock_one": "فقط {{count}} عنصر متبقي",
+  "lowStock_other": "فقط {{count}} عناصر متبقية",
+  "inStock_one": "{{count}} عنصر في المخزون",
+  "inStock_other": "{{count}} عنصر في المخزون",
+  "addToCart": "أضف إلى السلة",
+  "notifyMe": "أعلمني عند التوفر",
+  "stockAvailability": "توفر المخزون"
+  },
+  "search": {
+  "label": "بحث",
+  "placeholder": "ابحث عن المنتجات...",
+  "button": "بحث",
+  "searching": "جاري البحث...",
+  "clear": "مسح",
+  "resultsFound_one": "تم العثور على {{count}} نتيجة",
+  "resultsFound_other": "تم العثور على {{count}} نتيجة",
+  "noResults": "لم يتم العثور على نتائج"
+  },
   "common": {
-    "currentLanguage": "اللغة الحالية",
-    "languageSwitcherHelp": "استخدم القائمة المنسدلة لتغيير اللغة. يمكنك أيضًا استخدام شريط الأدوات في الأعلى لتغيير اللغة العامة."
+  "currentLanguage": "اللغة الحالية",
+  "languageSwitcherHelp": "استخدم القائمة المنسدلة لتغيير اللغة. يمكنك أيضًا استخدام شريط الأدوات في الأعلى لتغيير اللغة العامة."
   },
   "navigation": {
     "home": "الرئيسية",
@@ -186,7 +210,7 @@
       "alt": "شعار شركتك - رابط الصفحة الرئيسية"
     },
     "product": {
-      "placeholder": "صورة منتج مؤقتة",
+      "placeholder": "صورة المنتج",
       "loading": "جارٍ تحميل صورة المنتج",
       "error": "فشل تحميل صورة المنتج"
     },

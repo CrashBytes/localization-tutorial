@@ -1,5 +1,34 @@
 {
+  "languageSwitcher": {
+    "label": "Select language",
+    "currentLanguage": "Current language"
+  },
+  "product": {
+    "outOfStock": "Out of stock",
+    "lowStock_one": "Only {{count}} item left",
+    "lowStock_other": "Only {{count}} items left",
+    "inStock_one": "{{count}} item in stock",
+    "inStock_other": "{{count}} items in stock",
+    "addToCart": "Add to cart",
+    "notifyMe": "Notify me when back in stock",
+    "stockAvailability": "Stock availability"
+  },
+  "search": {
+    "label": "Search",
+    "placeholder": "Search products...",
+    "button": "Search",
+    "searching": "Searching...",
+    "clear": "Clear",
+    "resultsFound_one": "{{count}} result found",
+    "resultsFound_other": "{{count}} results found",
+    "noResults": "No results found"
+  },
   "common": {
+    "search": "Search",
+    "searching": "Searching...",
+    "resultsFound": "{{count}} results found",
+    "noResults": "No results found",
+    "selectLanguage": "Select language",
     "currentLanguage": "Current Language",
     "languageSwitcherHelp": "Use the dropdown to switch languages. You can also use the toolbar at the top to change the global locale."
   },
@@ -163,12 +192,12 @@
   },
   "time": {
     "justNow": "just now",
-    "minutesAgo": "{{count}} minute ago",
-    "minutesAgo_plural": "{{count}} minutes ago",
-    "hoursAgo": "{{count}} hour ago",
-    "hoursAgo_plural": "{{count}} hours ago",
-    "daysAgo": "{{count}} day ago",
-    "daysAgo_plural": "{{count}} days ago"
+    "minutesAgo_one": "{{count}} minute ago",
+    "minutesAgo_other": "{{count}} minutes ago",
+    "hoursAgo_one": "{{count}} hour ago",
+    "hoursAgo_other": "{{count}} hours ago",
+    "daysAgo_one": "{{count}} day ago",
+    "daysAgo_other": "{{count}} days ago"
   },
   "status": {
     "loading": "Loading content, please wait",
@@ -186,7 +215,7 @@
       "alt": "YourCompany logo - Home page link"
     },
     "product": {
-      "placeholder": "Product image placeholder",
+      "placeholder": "Product image",
       "loading": "Product image loading",
       "error": "Product image failed to load"
     },
