@@ -1,0 +1,24 @@
+{
+  "name": "localization-tutorial",
+  "version": "1.0.0",
+  "description": "Complete examples for implementing i18n in web applications using JSON key-value pairs",
+  "scripts": {
+    "validate-translations": "node scripts/validate-translations.js",
+    "dev:react": "cd react-i18next-example && npm run dev",
+    "build:react": "cd react-i18next-example && npm run build",
+    "storybook": "cd react-i18next-example && npm run storybook",
+    "build-storybook": "cd react-i18next-example && npm run build-storybook",
+    "test": "echo \"Run tests in individual examples\" && exit 0"
+  },
+  "keywords": [
+    "i18n",
+    "internationalization",
+    "localization",
+    "react",
+    "nextjs",
+    "accessibility",
+    "tutorial"
+  ],
+  "author": "CrashBytes",
+  "license": "MIT"
+}
