@@ -1,6 +1,24 @@
 # Web Application Localization Tutorial
 
+[![Storybook](https://img.shields.io/badge/Storybook-Live%20Demo-FF4785?style=for-the-badge&logo=storybook&logoColor=white)](https://michaeleakins.github.io/crashbytes-tutorials/)
+[![Tutorial](https://img.shields.io/badge/Read-Tutorial-0066CC?style=for-the-badge&logo=read-the-docs&logoColor=white)](https://crashbytes.com/articles/web-application-localization-i18n-tutorial-json-key-value-implementation-2025)
+
 > Complete examples for implementing internationalization (i18n) in web applications using JSON key-value pairs
+
+## 🎮 Try the Interactive Demo
+
+**Experience localization in action!** Explore all components with real-time language switching:
+
+### 👉 **[Launch Interactive Storybook →](https://michaeleakins.github.io/crashbytes-tutorials/)**
+
+Features:
+- 🌍 **5 languages**: English, Spanish, French, German, Japanese
+- 💱 **Currency formatting**: See prices in different locales
+- 📦 **Product states**: In stock, low stock, out of stock
+- ♿ **Accessibility**: ARIA labels, screen reader support
+- 📝 **Documentation**: Auto-generated component docs
+
+---
 
 This repository contains working code examples from the [CrashBytes Localization Tutorial](https://crashbytes.com/articles/web-application-localization-i18n-tutorial-json-key-value-implementation-2025).
 
