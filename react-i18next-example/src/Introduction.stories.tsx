@@ -27,7 +27,7 @@ const meta = {
             </a>.
           </p>
 
-          <h2>🌍 What You'll Find Here</h2>
+          <h2>What You'll Find Here</h2>
           <p>
             This Storybook showcases production-ready React components implementing internationalization (i18n) 
             using <strong>i18next</strong> and <strong>JSON key-value pairs</strong>.
@@ -62,14 +62,14 @@ const meta = {
             </li>
           </ul>
 
-          <h2>🎯 How to Use This Demo</h2>
+          <h2>How to Use This Demo</h2>
 
           <h3>1. Navigate Components</h3>
           <p>Use the sidebar to explore different components and their variations (stories).</p>
 
           <h3>2. Switch Languages</h3>
           <p>
-            Click the <strong>globe icon</strong> (🌐) in the top toolbar to change the language. 
+            Click the <strong>globe icon</strong> in the top toolbar to change the language. 
             Watch how all text, formatting, and ARIA labels update in real-time.
           </p>
 
@@ -88,46 +88,40 @@ const meta = {
           <h3>5. Read Documentation</h3>
           <p>Switch to the <strong>Docs</strong> tab for detailed component documentation and implementation notes.</p>
 
-          <h2>🌐 Supported Languages</h2>
+          <h2>Supported Languages</h2>
           <p>This demo supports 5 languages with full translations:</p>
           <table style={{ width: '100%', borderCollapse: 'collapse', marginTop: '1rem' }}>
             <thead>
               <tr style={{ borderBottom: '2px solid #e0e0e0' }}>
                 <th style={{ padding: '0.5rem', textAlign: 'left' }}>Language</th>
-                <th style={{ padding: '0.5rem', textAlign: 'left' }}>Code</th>
-                <th style={{ padding: '0.5rem', textAlign: 'left' }}>Flag</th>
+                <th style={{ padding: '0.5rem', textAlign: 'left' }}>Locale Code</th>
               </tr>
             </thead>
             <tbody>
               <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
-                <td style={{ padding: '0.5rem' }}>English</td>
-                <td style={{ padding: '0.5rem' }}>en</td>
-                <td style={{ padding: '0.5rem' }}>🇺🇸</td>
+                <td style={{ padding: '0.5rem' }}>English (US)</td>
+                <td style={{ padding: '0.5rem' }}>en-US</td>
               </tr>
               <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
-                <td style={{ padding: '0.5rem' }}>Spanish</td>
-                <td style={{ padding: '0.5rem' }}>es</td>
-                <td style={{ padding: '0.5rem' }}>🇪🇸</td>
+                <td style={{ padding: '0.5rem' }}>Spanish (Spain)</td>
+                <td style={{ padding: '0.5rem' }}>es-ES</td>
               </tr>
               <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
-                <td style={{ padding: '0.5rem' }}>French</td>
-                <td style={{ padding: '0.5rem' }}>fr</td>
-                <td style={{ padding: '0.5rem' }}>🇫🇷</td>
+                <td style={{ padding: '0.5rem' }}>French (France)</td>
+                <td style={{ padding: '0.5rem' }}>fr-FR</td>
               </tr>
               <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
-                <td style={{ padding: '0.5rem' }}>German</td>
-                <td style={{ padding: '0.5rem' }}>de</td>
-                <td style={{ padding: '0.5rem' }}>🇩🇪</td>
+                <td style={{ padding: '0.5rem' }}>German (Germany)</td>
+                <td style={{ padding: '0.5rem' }}>de-DE</td>
               </tr>
               <tr style={{ borderBottom: '1px solid #e0e0e0' }}>
-                <td style={{ padding: '0.5rem' }}>Japanese</td>
+                <td style={{ padding: '0.5rem' }}>Japanese (Japan)</td>
                 <td style={{ padding: '0.5rem' }}>ja-JP</td>
-                <td style={{ padding: '0.5rem' }}>🇯🇵</td>
               </tr>
             </tbody>
           </table>
 
-          <h2>✨ Key Features Demonstrated</h2>
+          <h2>Key Features Demonstrated</h2>
 
           <h3>Localization</h3>
           <ul>
@@ -151,7 +145,7 @@ const meta = {
             <li><strong>Semantic HTML</strong> - Proper use of form elements and buttons</li>
           </ul>
 
-          <h2>📚 Learn More</h2>
+          <h2>Learn More</h2>
           <ul>
             <li>
               <strong>Tutorial Article</strong>:{' '}
@@ -166,7 +160,7 @@ const meta = {
             <li>
               <strong>GitHub Repository</strong>:{' '}
               <a 
-                href="https://github.com/MichaelEakins/crashbytes-tutorials/tree/main/localization-tutorial"
+                href="https://github.com/CrashBytes/localization-tutorial"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -181,7 +175,7 @@ const meta = {
             </li>
           </ul>
 
-          <h2>🚀 Get Started</h2>
+          <h2>Get Started</h2>
           <p>Ready to explore? Start with:</p>
           <ol>
             <li><strong>Components → ProductCard → In Stock</strong> - See basic localization</li>
